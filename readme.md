@@ -1,14 +1,17 @@
 房价预测 - 基于PyTorch的MLP回归模型
  项目概述
+ 
 这是一个使用PyTorch实现的多层感知机（MLP）回归模型，用于预测房价。项目基于经典的Ames Housing数据集，通过深度学习技术探索房价与各种特征之间的关系。
 
  项目目标
+ 
 构建一个能够准确预测房价的深度学习模型
 掌握使用PyTorch进行回归任务的基本流程
 学习数据预处理、特征工程和模型调优的方法
 体验完整的机器学习项目生命周期
 
  技术栈
+ 
 Python 3.13
 PyTorch
 Pandas / NumPy
@@ -16,12 +19,14 @@ Matplotlib
 Scikit-learn
 
  数据集
+ 
 使用的是著名的Ames Housing数据集，包含：
 训练集：1460个样本，79个特征
 测试集：1459个样本
 目标变量：SalePrice（房价）
 
  项目亮点
+ 
 完整的PyTorch MLP实现，不依赖高级库
 系统的特征工程（数值特征标准化、类别特征One-Hot编码）
 对偏态特征和标签进行对数变换
@@ -32,18 +37,26 @@ Scikit-learn
 最终在kaggle官网上评估排名1695/4105
 
 项目结构
+
 house-price-prediction/
 │
+
 ├── data/
+
 │   ├── train.csv          # 训练数据
+
 │   └── test.csv           # 测试数据
+
 │
 ├── notebooks/
+
 │   └── mlp_house_price_prediction.ipynb  # 主代码文件
+
 │
 ├── README.md              # 项目说明
 
 开发过程中的挑战与解决方案
+
 挑战1：数据预处理
 问题：原始数据包含大量缺失值和类别特征，直接输入模型会导致错误。
 解决：
@@ -79,6 +92,7 @@ house-price-prediction/
 添加L2正则化（weight decay）
 
 项目收获
+
 这是我第一次尝试机器学习相关项目，有以下收获：
 理解了完整的机器学习流程：从数据探索、预处理到模型训练、评估
 掌握了PyTorch的基本用法：模型定义、训练循环、数据加载器
